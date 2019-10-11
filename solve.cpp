@@ -6,6 +6,10 @@ double division(int a, int b);
 
 int main(int argc, char *argv[])
 {
+    cout << "Value of __LINE__ : " << __LINE__ << endl;
+    cout << "Value of __FILE__ : " << __FILE__ << endl;
+    cout << "Value of __DATE__ : " << __DATE__ << endl;
+    cout << "Value of __TIME__ : " << __TIME__ << endl;
     while (true)
     {
         int x = 50, y = 0;
