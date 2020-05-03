@@ -1,5 +1,6 @@
 #include <iostream>
 #include <stdio.h>
+#include <string>
 using namespace std;
 
 double division(int a, int b);
@@ -21,23 +22,24 @@ int main(int argc, char *argv[])
             z = division(x, y);
             cout << x << "/" << y << "=" << z << endl;
         }
-        catch (const char *msg)
+        catch (const char * msg)
         {
-           cout<<msg<<endl;
+            string a=msg;
+            cout << a << endl;
         }
-        catch(int m)
+        catch (int m)
         {
-            cerr<<m<<endl;
+            cerr << m << endl;
         }
-   }
+    }
 
     return 0;
 }
 double division(int a, int b)
 {
-   if( b == 0 )
-   {
-      throw  "åˆ†æ¯ä¸èƒ½ä¸º0ï¼";
-   }
-   return ((double)a/b);
+    if (b == 0)
+    {
+        throw "ÖÐÎÄ";
+    }
+    return ((double)a / b);
 }
